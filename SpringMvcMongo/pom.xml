@@ -14,6 +14,18 @@
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
 	<dependencies>
+	<!--Rest Dependencies  -->
+	<dependency>
+   <groupId>org.codehaus.jackson</groupId>
+   <artifactId>jackson-mapper-asl</artifactId>
+   <version>1.9.2</version>
+  </dependency>
+
+  <dependency>
+   <groupId>org.codehaus.jackson</groupId>
+   <artifactId>jackson-core-asl</artifactId>
+   <version>1.9.2</version>
+  </dependency>
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -32,6 +44,8 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		
+		
 
 		<!-- MongoDb -->
 		<dependency>
@@ -91,6 +105,9 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
+		
+		
+		
 
 		<!-- @Inject -->
 		<dependency>

@@ -10,7 +10,7 @@ import spring.mvc.mongo.bean.Customer;
 public class CustomerService {
 	@Autowired
 	private MongoTemplate mongoTemplate;
-	private final String collectionName = "customer";
+	//private final String collectionName = "customer";
 
 	public void saveCustomer(Customer customer) {
 		if (!mongoTemplate.collectionExists(Customer.class)) {
